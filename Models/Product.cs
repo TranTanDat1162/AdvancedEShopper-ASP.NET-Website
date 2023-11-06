@@ -13,7 +13,7 @@ namespace AdvancedEShopper.Models
         [StringLength(3000)]
         public string? ProductDescription { get; set; }
         [ForeignKey("Category")]
-        public string? CategoryId { get; set; }
+        public int CategoryId { get; set; }
         public Category? Category { get; set; }
         [Column(TypeName = "decimal(8,2")]
         public decimal? ProductPrice { get; set; }
